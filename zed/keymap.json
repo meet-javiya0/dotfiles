@@ -1,0 +1,35 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            // "shift shift": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            // "j k": ["workspace::SendKeystrokes", "escape"]
+            "ctrl-d": "editor::DuplicateLineDown"
+        }
+    },
+    {
+        "bindings": {
+            "ctrl-right": "assistant2::FocusRight",
+            "ctrl-left": "assistant2::FocusLeft"
+            // todo
+        }
+    },
+    {
+        "context": "ProjectPanel && not_editing",
+        "bindings": {
+            "o": "project_panel::Open"
+        }
+    }
+]

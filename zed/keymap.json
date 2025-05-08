@@ -6,6 +6,13 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
+    // {
+    //     "context": "AssistantInput",
+    //     "bindings": {
+    //         "ctrl-enter": null,
+    //         "ctrl-shift-a": "assistant::Assist"
+    //     }
+    // },
     {
         "context": "Workspace",
         "bindings": {
@@ -16,14 +23,18 @@
         "context": "Editor",
         "bindings": {
             // "j k": ["workspace::SendKeystrokes", "escape"]
-            "ctrl-d": "editor::DuplicateLineDown"
+            "ctrl-d": "editor::DuplicateLineDown",
+            "ctrl-shift-d": "editor::DuplicateLineUp"
         }
     },
     {
+        "context": "Workspace",
         "bindings": {
-            "ctrl-right": "assistant2::FocusRight",
-            "ctrl-left": "assistant2::FocusLeft"
-            // todo
+            "ctrl-right": "workspace::ActivatePaneRight",
+            "ctrl-left": "workspace::ActivatePaneLeft",
+            "ctrl-up": "workspace::ActivatePaneUp",
+            "ctrl-down": "workspace::ActivatePaneDown",
+            "ctrl-enter": "vim::InsertLineBelow"
         }
     },
     {
